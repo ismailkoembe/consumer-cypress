@@ -4,6 +4,10 @@
 
 # Default to the read only token - the read/write token will be present on Travis CI.
 # It's set as a secure environment variable in the .travis.yml file
+
+include .env
+export $(shell sed 's/=.*//' .env)
+
 GITHUB_ORG="pactflow"
 PACTICIPANT ?= "pactflow-example-bi-directional-consumer-cypress"
 GITHUB_WEBHOOK_UUID := "04510dc1-7f0a-4ed2-997d-114bfa86f8ad"
@@ -147,7 +151,7 @@ PACT_TOOL?=docker
 PACT_CLI_DOCKER_VERSION?=latest
 PACT_CLI_VERSION?=latest
 PACT_CLI_STANDALONE_VERSION?=2.4.1
-PACT_CLI_DOCKER_RUN_COMMAND?=docker run --rm -v /${PWD}:/${PWD} -w ${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:${PACT_CLI_DOCKER_VERSION}
+PACT_CLI_DOCKER_RUN_COMMAND?=docker run --platform linux/amd64 --rm -v /${PWD}:/${PWD} -w ${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:${PACT_CLI_DOCKER_VERSION}
 PACT_BROKER_COMMAND=pact-broker
 PACTFLOW_CLI_COMMAND=pactflow
 
