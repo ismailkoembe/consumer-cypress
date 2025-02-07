@@ -71,7 +71,7 @@ jobs:
         pact_provider:
           [
             "pactflow-example-bi-directional-provider-dredd",
-            "pactflow-example-bi-directional-provider-postman",
+            "ismail-provider-postman",
             "pactflow-example-bi-directional-provider-restassured",
             # "pactflow-example-provider", # cdct provider - no oas
             # "pactflow-example-bi-directional-provider-dotnet" # mismatch
@@ -80,7 +80,7 @@ jobs:
     env:
       PACT_TOOL: ${{ matrix.pact_tool }}
       BRANCH: ${{ needs.setup.outputs.BRANCH }}
-      PACTICIPANT: "pactflow-example-bi-directional-consumer-cypress-${{ matrix.os }}-${{ matrix.node-version }}-${{ matrix.pact_tool }}"
+      PACTICIPANT: "ismail-consumer-cypress-${{ matrix.os }}-${{ matrix.node-version }}-${{ matrix.pact_tool }}"
       PACT_PROVIDER: ${{ matrix.pact_provider }}
       PACT_CLI_VERSION: ${{ needs.setup.outputs.PACT_CLI_VERSION}}
       PACT_TOOL_USER_CHOICE: ${{ needs.setup.outputs.PACT_TOOL }}

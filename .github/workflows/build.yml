@@ -10,8 +10,8 @@ env:
   REACT_APP_API_BASE_URL: http://localhost:3001
   VERSION: ${{ github.sha }}
   GIT_REF: ${{ github.ref }}
-  PACT_PROVIDER: pactflow-example-bi-directional-provider-postman
-  PACTICIPANT: pactflow-example-bi-directional-consumer-cypress
+  PACT_PROVIDER: ismail-provider-postman
+  PACTICIPANT: ismail-consumer-cypress
 
 jobs:
   test:
