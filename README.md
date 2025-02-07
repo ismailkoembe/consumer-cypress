@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/pactflow/example-bi-directional-consumer-cypress/actions/workflows/build.yml/badge.svg)](https://github.com/pactflow/example-bi-directional-consumer-cypress/actions/workflows/build.yml)
 
-[![Can I Deploy Status](https://testdemo.pactflow.io/pacticipants/ismail-consumer-cypress/branches/main/latest-version/can-i-deploy/to-environment/production/badge)](https://testdemo.pactflow.io/pacticipants/ismail-consumer-cypress/branches/main/latest-version/can-i-deploy/to-environment/production/badge)
+[![Can I Deploy Status](https://metro-markets-pact.pactflow.io/pacticipants/ismail-consumer-cypress/branches/main/latest-version/can-i-deploy/to-environment/production/badge)](https://metro-markets-pact.pactflow.io/pacticipants/ismail-consumer-cypress/branches/main/latest-version/can-i-deploy/to-environment/production/badge)
 
 - [Example NodeJS/React Consumer - Cypress (BYO Adapter)](#example-nodejsreact-consumer---cypress-byo-adapter)
   - [Overview of Example](#overview-of-example)
@@ -88,7 +88,7 @@ See [Environment variables](#environment-variables) on how to set these up.
 To be able to run some of the commands locally, you will need to export the following environment variables into your shell:
 
 - `PACT_BROKER_TOKEN`: a valid [API token](https://docs.pactflow.io/docs/getting-started/#configuring-your-api-token) for PactFlow
-- `PACT_BROKER_BASE_URL`: a fully qualified domain name with protocol to your pact broker e.g. https://testdemo.pactflow.io
+- `PACT_BROKER_BASE_URL`: a fully qualified domain name with protocol to your pact broker e.g. https://metro-markets-pact.pactflow.io
 
 <!-- CONSUMER env vars -->
 
